@@ -1,0 +1,5 @@
+Nombre: Nuhore Apellido: Quintero
+Division: 115
+Fecha: 2025-12-12
+Distribución: Ubuntu
+Cantidad de Cores: 2
