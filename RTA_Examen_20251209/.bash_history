@@ -638,3 +638,67 @@ cp -r UTN-FRA_SO_Examenes/202407/ RTA_Examen_20251209/
 find ~/UTNFRA_SO_Integrador_Quintero/ -name 202407
 cp -r /tmp/head-check/ RTA_Examen_20251209/
 history -a
+cp ~/.bash_history RTA_Examen_20251209/
+ls
+git status
+git add .
+git status
+git commit -m "Entrega Final"
+git push
+cd RTA_Examen_20251209/
+ls
+tree Punto_B.sh 
+tree /tmp/head-check/
+sudo ./Quintero_check_URL.sh Lista_URL.txt 
+ls
+vim Quintero_check_URL.sh 
+cat Lista_URL.txt 
+sudo rm -rf /tmp/head-check/
+ls
+sudo rm -rf /head-check/
+ls
+# 1. Ejecutar el script nuevamente para regenerar /tmp/head-check/
+sudo ./Quintero_check_URL.sh Lista_URL.txt
+tree /tmp/head-check/
+vim Quintero_check_URL.sh 
+sudo rm -rf /tmp/head-check/
+sudo ./Quintero_check_URL.sh Lista_URL.txt
+tree /tmp/head-check/
+sudo rm -rf /tmp/head-check/
+tree /tmp/head-check/
+sudo ./Quintero_check_URL.sh Lista_URL.txt
+tree /tmp/head-check/
+vim Quintero_check_URL.sh 
+cat Lista_URL.txt 
+cd
+ls
+cd UTNFRA_SO_Integrador_Quintero
+ls
+history 
+ls
+cd RTA_Examen_20251209/
+ls
+cat Lista_URL.txt 
+vim Quintero_check_URL.sh 
+cat Quintero_check_URL.sh 
+#!/bin/bash
+RUTA_LISTADO="$1"
+DIR_BASE="/tmp/head-check"
+DIR_LOG="/var/log/status_URL.log"
+if [ -z "$RUTA_LISTADO" ]; then         echo "Debe selecccionar una ruta del archivo Lista_URL.txt";         exit 1 fi
+cd
+cd UTNFRA_SO_Integrador_Quintero
+cd RTA_Examen_20251209/
+vim Quintero_check_URL.sh 
+ls Lista_URL.txt 
+cat Lista_URL.txt 
+vim Lista_URL.txt 
+history 
+sudo rm -rf /tmp/head-check/
+ls
+tree /tmp/h
+tree /tmp/head-check/
+sudo ./Quintero_check_URL.sh Lista_URL.txt
+tree /tmp/head-check/
+cd ~/UTNFRA_SO_Integrador_Quintero
+history -a

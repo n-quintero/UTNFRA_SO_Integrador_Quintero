@@ -16,7 +16,7 @@ mkdir -p "$DIR_BASE/Error/cliente" "$DIR_BASE/Error/servidor" "$DIR_BASE/ok"
 
 while IFS= read -r URL; do
 
-	STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}\n" "$URL")
+	STATUS_CODE=$(curl -LI -o /dev/null -w '%{http_code}\n' -s "$URL")
 	TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 	LOG_LINE="$TIMESTAMP - Code:$STATUS_CODE - URL:$URL"
 	echo "$LOG_LINE" >> "$DIR_LOG"
@@ -40,7 +40,7 @@ while IFS= read -r URL; do
 			echo "$LOG_LINE" >> "$DIR_BASE/Error/servidor/$LOG_FILE"
 			;;
 		*)
-			echo "$LOG_LINE" >> "$DIR_BASE/Error/noexiste.log"
+			echo "$LOG_LINE" >> "$DIR_BASE/Error/cliente/noexiste.log"
 
 	esac
 done < "$RUTA_LISTADO"
